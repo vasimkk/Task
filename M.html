@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recycling</title>   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <style>
+        .p{
+            font-size: 20px;
+            background-color:rgb(178, 178,235);
+            height: 100px;
+            top: 2px;
+            position: sticky;
+        }
+    </style>
+   </head>
+   <body>
+    <nav class="navbar navbar-expand-lg navbar-light  p">
+    <div class="container-fluid">
+      
+<img src="https://img.icons8.com/?size=50&id=737&format=png" width="80px" height="80px">    
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="padding-left: 30px;">
+              Clothes
+            </a>
+            <ul class="dropdown-menu" style="background-color: rgb(162, 204, 162);" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Mens</a></li>
+              <li><a class="dropdown-item" href="#">Womens</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Kids</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="padding-left: 30px;">
+             Books
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color:rgb(162, 204, 162);">
+              <li><a class="dropdown-item" href="#">school Books</a></li>
+              <li><a class="dropdown-item" href="#">Institutions Books</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Government Books</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="padding-left: 30px;">
+              Electronics
+            </a>
+            <ul class="dropdown-menu" style="background-color: rgb(162, 204, 162);" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Laptop/Computers</a></li>
+              <li><a class="dropdown-item" href="#">Mobiles</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Others</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="padding-left: 30px;">
+              Others
+            </a>
+            <ul class="dropdown-menu" style="background-color: rgb(162, 204, 162);" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Glass</a></li>
+              <li><a class="dropdown-item" href="#">Plastics</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Farniture</a></li>
+            </ul>
+          </li>
+         <li>
+
+      <div id="google_translate_element" style="padding-left: 40px; padding-top: 8px;">
+      English-EN</div>
+      <script type="text/javascript">
+       function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+           pageLanguage: 'en', layout: 
+           google.translate.TranslateElement.InlineLayout.HORIZONTAL, autoDisplay: 
+           false, includedLanguages: 'fr,hi,ur', gaTrack: true, gaId: 'YOUR_API_KEY'
+           }, 'google_translate_element');
+     }
+  </script>
+  <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</li>
+</ul>
+ <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <br><br>
+ <div class="container">
+  <div class="row">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js">
+    </script>
+    <style>
+        .mode {
+            float:right;
+        }
+        .change {
+            cursor: pointer;
+            border: 1px solid #555;
+            border-radius: 40%;
+            width: 20px;
+            text-align: center;
+            padding: 5px;
+            margin-left: 8px;
+        }
+        .dark{
+            background-color: #222;
+            color: #e6e6e6;
+        }
+    </style>
+    </head>
+    <div class="mode">
+        Dark mode:			 
+        <span class="change">OFF</span>
+    </div>
+     <script>
+        $( ".change" ).on("click", function() {
+            if( $( "body" ).hasClass( "dark" )) {
+                $( "body" ).removeClass( "dark" );
+                $( ".change" ).text( "OFF" );
+            } else {
+                $( "body" ).addClass( "dark" );
+                $( ".change" ).text( "ON" );
+            }
+        });
+    </script>
+     </div>
+   </div>
+   <br>
+   <div class="homebnr">
+   <div class="container">
+   <div class="row">
+   <div class="col-md-6">
+   <h1 class="wow fadeInUp animated">
+   Revolutionizing the way India <span style="color: #32a852;">Re-Use</span></h1>
+   <p class="wow fadeInUp animated">The Re-USE system is growing beyond Chalk-and-Talk. The next generation needs advanced methods of Re-USE and we are equipping those who empower the genZ.</p>
+   <div class="bannerbnts">
+    <br>
+   <a href="#" class="active wow fadeInUp animated" data-toggle="modal" data-target="#get_trained" >
+  <button style="background-color: rgb(222, 238, 238);">Know more</button></a>
+   
+  </div>
+</div>
+<div class="col-md-6">
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://www.zoiinternational.com/wp-content/uploads/2019/12/Recycled-Clothing.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://www.fcgov.com/recycling-item-images/img/electronics.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://cdn.shopify.com/s/files/1/0903/2160/files/Books_1024x1024.jpg?4089086108333093196" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+    </div>
+    </div>
+    </div>
+    <br>
+    <hr>
+    <div class="container">
+      <div class="row">
+        
+     <h2 style="text-align: center;">Why use our Website?</h2> 
+     <br> 
+     <br> 
+     <br>
+<iframe width="250px" height="350px" src="https://www.youtube.com/embed/0Xat8b3xGSs?si=SVbY4iwXrH1-csA6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    <br>
+    <hr>
+    <div class="what_section">
+      <div class="container">
+        <div class="row">
+          <h1 style="text-align: center;">Our Features</h1>
+          <br><br><br><br>
+          <marquee><h3>Everything is here so Injoy it..</h3></marquee>
+          <br><br><br><br>
+        <div class="col-md-4">
+        <div class="whatinner wow fadeInUp animated">
+        <img src="https://static.toiimg.com/thumb/msid-65119881,width-800,resizemode-4,imgsize-197975/share.jpg" style="border-radius: 20px;" width="300px" height="300px" >
+        <div class="whylms">
+        <h4>You Can Buy</h4>
+        <p>A Re-Use system (RUS) allows you to Buy old Products, By using our Website you can buy old product in a very good range.
+        </p>
+        <a href="#" data-toggle="modal" data-target="#get_trained">Know More</a>
+        </div>
+        </div>
+        </div><div class="col-md-4">
+            <div class="whatinner wow fadeInUp animated">
+            <img src="https://www.forbes.com/advisor/wp-content/uploads/2022/04/Image_-_Sell_products_online_.jpeg.jpg" style="border-radius: 20px;" width="300px" height="300px">
+            <div class="whylms">
+            <h4>You Can Sell</h4>
+            <p>A Re-Use system (RUS) allows you to Sell old Products, By using our website you can sell old product at a very good range.
+            </p>
+            <a href="#" data-toggle="modal" data-target="#get_trained">Know More</a>
+            </div>
+            </div>
+            </div><div class="col-md-4">
+                <div class="whatinner wow fadeInUp animated">
+                <img src="https://www.shutterstock.com/image-photo/illegal-deal-concept-money-cash-260nw-1346501471.jpg" style="border-radius: 20px;" width="300px" height="300px">
+                <div class="whylms">
+                <h4>You Can Exchanges</h4>
+                <p>Using our website, you can can either get money in exchanges for your old products or buy another old product the same range.
+                </p>
+                <a href="#" data-toggle="modal" data-target="#get_trained">Know More</a>
+                </div>
+                </div>
+                </div>
+                </div>
+                </div>
+                <br><br><br>
+                <hr>
+                <div class="container">
+                  <div class="row">
+                    <h3 style="text-align: center;">Please sign up..</h3>
+                    <br><br><br>
+                   <!-- Button trigger modal -->
+                  <div class="container">
+                    <div class="row ">
+                      <div class="col-md-12">
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" style=" width: 250px; height: 50px; margin-left: 450px;">
+  Sign up
+</button>
+</div>
+ </div>
+ </div>
+ <p style="text-align: center;">New customer?<a href="#">Start here</a></p>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form class="row g-3 needs-validation" novalidate>
+          <div class="col-md-12">
+            <label for="validationCustomUsername" class="form-label">Username</label>
+            <div class="input-group has-validation">
+              <span class="input-group-text" id="inputGroupPrepend">@</span>
+              <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+              <div class="invalid-feedback">
+                Please choose a username.
+              </div>
+            </div>
+          </div><div class="col-md-12">
+            <label for="validationCustomUsername" class="form-label">password</label>
+            <div class="input-group has-validation">
+              <span class="input-group-password" id="inputGroupPrepend"></span>
+              <input type="password" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+              <div class="invalid-feedback">
+                Please Enter password.
+              </div>
+            </div>
+          </div>
+     </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Continues</button>
+      </div>
+    </div>
+  </div>
+</div> 
+<br><br><br>
+<hr>
+<div class="container">
+  <div class="row">
+    <h3 style="text-align: center;">Choose Your Location</h3>
+    <br><br>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d59468.58286020219!2d76.18112510022145!3d21.319453742613756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x3bd8331d2fa4b30f%3A0x329f2fbd78f60f!2sThakur%20Shiv%20Kumar%20Singh%20Memorial%20Management%20College%2C%20869C%2BQW4%2C%20Navalnagar%2C%20Madhya%20Pradesh!3m2!1d21.3193788!2d76.22232509999999!4m5!1s0x3bd8331d2fa4b30f%3A0x329f2fbd78f60f!2s869C%2BQW4%20Thakur%20Shiv%20Kumar%20Singh%20Memorial%20Management%20College%2C%20Navalnagar%2C%20Madhya%20Pradesh%20450331!3m2!1d21.3193788!2d76.22232509999999!5e0!3m2!1sen!2sin!4v1698753750561!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+ <br><br>
+  </div>
+</div>
+ <br><br><br>
+ <hr>
+ <div class="container">
+  <div class="row " style="background-color: #555;">
+    <a  href="#" style="text-decoration: none;"><h5 style="text-align: center;">Back to Top</h5></a>
+  </div>
+ </div>
+ <br><br>
+ <hr>
+ <div class="container">
+ <div class="row " style="background-color:rgb(178, 178,235);">
+   <a ><h5 style="text-align: center;">Help Us: <a>profile</a>  ||  <a>Login</a>  || <a>About</a> || <a>Help</a></h5></a>
+ </div>
+</div>
+<hr>
+<footer class="ftr homeftr" style="background-color: rgb(200, 200, 219);">
+  <div class="container">
+  <div class="row">
+  <div class="col-md-3"> 
+    <img src="https://img.icons8.com/?size=50&id=737&format=png" width="150px" height="150px">
+  </div>
+  <div class="col-md-3">
+  <h4>Clothes</h4>
+  <ul class="ftmenu" style="list-style: none;" >
+  <li><a href="#" style="text-decoration: none;" >
+    <img src="https://img.icons8.com/?size=48&id=p7knLKcrWmUD&format=png" width="30px" height="30px">
+    Mens</a></li>
+  <li><a href="https://crm.konadigital.ai/" target="_blank" style="text-decoration: none;" >
+    <img src="https://img.icons8.com/?size=48&id=vOpEWFY1gEDl&format=png" width="30px" height="30px">
+    Womens</a></li>
+  <li><a href="https://konatel.in/" target="_blank" style="text-decoration: none;" >
+    <img src="https://image.shutterstock.com/image-vector/kids-clothes-logo-sign-childrens-260nw-1046960905.jpg" width="30px" height="30px">
+    Kids </a></li>
+  </ul>
+  </div>
+  <div class="col-md-3">
+  <h4>Solutions</h4>
+  <ul class="ftmenu"  style="list-style: none;">
+  <li><a href="school-colleges.html" style="text-decoration: none;" >
+    <img src="https://img.icons8.com/?size=50&id=38854&format=png" width="30px" height="30px">
+    School Books</a></li>
+  <li><a href="educational-institutions.html" style="text-decoration: none;"> 
+    <img src="https://img.icons8.com/?size=48&id=ChugQlss1ohB&format=png" width="30px" height="30px">
+    Institutions Books</a></li
+  <li><a href="government.html" style="text-decoration: none;">
+    <img src="https://img.icons8.com/?size=80&id=114010&format=png" width="30px" height="30px">
+    Government Books</a></li>
+  </ul>
+  </div>
+  <div class="col-md-3">
+  <ul class="social " style="list-style: none;">
+  <li><a href="https://www.facebook.com/Kona-Digital-106524751096366" target="_blank" style="text-decoration: none;"><span class="fb">
+    <img src="https://img.icons8.com/?size=48&id=118497&format=png" width="30px" height="30px">
+  </span> Facebook</a></li>
+  <li><a href="https://twitter.com/digital_kona" target="_blank"style="text-decoration: none;" ><span class="tweet">
+    <img src="https://img.icons8.com/?size=48&id=ULM26f07x6SD&format=gif" width="30px" height="30px">
+  </span> Twitter</a></li>
+  <li><a href="https://www.instagram.com/konadigital.ai/" target="_blank" style="text-decoration: none;" ><span class="insta">
+    <img src="https://img.icons8.com/?size=48&id=32323&format=png" width="30px" height="30px">
+  </span> Instagram</a></li>
+  <li><a href="https://www.linkedin.com/company/digitalkona" target="_blank" style="text-decoration: none;" ><span class="linkedin">
+    <img src="https://img.icons8.com/?size=48&id=xuvGCOXi8Wyg&format=png" width="30px" height="30px">
+  </span> LinkedIn</a></li>
+  </ul>
+  </div>
+  </div>
+  </div>  
+</footer>
+<div class="container">
+  <div class="row" >
+    <div class="ftrcopy" style="text-align: center;"> Copyright 2023 Recycling</div>
+  </div>
+</div>
+  
+ 
